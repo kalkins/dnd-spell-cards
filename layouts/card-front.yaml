@@ -1,0 +1,30 @@
+NameBox:
+  x: 2mm
+  y: 2mm
+  width: deck - 4mm
+  height: 7mm
+  fill_color: "white"
+  stroke_width: 0
+
+Name:
+  extends: NameBox
+  align: center
+  valign: middle
+  font_size: 15
+
+DescriptionBox:
+  extends: NameBox
+  y: +=8mm
+  height: deck - 15mm
+  fill_color: "white"
+  stroke_width: 0
+
+Description:
+  extends: DescriptionBox
+  x: +=1mm
+  y: +=1mm
+  width: deck - 6mm
+  height: -=2mm
+  align: left
+  font_size: 10
+  ellipsize: :autoscale

@@ -7,6 +7,7 @@ require_relative 'render'
 @options = {
   :verbose => 0,
   :out => "cards.pdf",
+  :color => "red",
 }
 
 OptionParser.new do |opts|
@@ -21,6 +22,10 @@ OptionParser.new do |opts|
   opts.on("--spells SPELLS", Array, "The spells to turn into cards") do |spells|
     @options[:spells_by_index] = spells
   end
+
+  opts.on("-cCOLOR", "--color COLOR", "The color of the cards") do |color|
+    @options[:color] = color
+  end
 end.parse!
 
 fetcher = SpellFetcher.new
@@ -32,4 +37,4 @@ else
   exit
 end
 
-render_cards spells, "out", @options[:out]
+render_cards spells, "out", @options[:out], @options[:color]

@@ -1,0 +1,50 @@
+---
+sheet_width: 210mm
+sheet_height: 297mm
+card_width: 64.0mm
+card_height: 93.0mm
+cards:
+- x: 8.0mm
+  "y": 6.0mm
+- x: 73.0mm
+  "y": 6.0mm
+- x: 138.0mm
+  "y": 6.0mm
+- x: 8.0mm
+  "y": 100.0mm
+- x: 73.0mm
+  "y": 100.0mm
+- x: 138.0mm
+  "y": 100.0mm
+- x: 8.0mm
+  "y": 194.0mm
+- x: 73.0mm
+  "y": 194.0mm
+- x: 138.0mm
+  "y": 194.0mm
+crop_line:
+  lines:
+  - type: :vertical
+    position: 8.0mm
+  - type: :vertical
+    position: 72.0mm
+  - type: :vertical
+    position: 73.0mm
+  - type: :vertical
+    position: 137.0mm
+  - type: :vertical
+    position: 138.0mm
+  - type: :vertical
+    position: 202.0mm
+  - type: :horizontal
+    position: 6.0mm
+  - type: :horizontal
+    position: 99.0mm
+  - type: :horizontal
+    position: 100.0mm
+  - type: :horizontal
+    position: 193.0mm
+  - type: :horizontal
+    position: 194.0mm
+  - type: :horizontal
+    position: 287.0mm
