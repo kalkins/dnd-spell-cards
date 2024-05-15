@@ -12,7 +12,7 @@ class SpellFetcher
 
       response = HTTP.get(url)
 
-      if (response.code == 200)
+      if response.status.success?
         data = JSON.parse(response.body)
 
         Spell.new(
@@ -20,7 +20,7 @@ class SpellFetcher
           description: data["desc"].join("\n"),
         )
       else
-        error = response,body
+        error = response.body
         puts "Error while fetching #{spell}: #{error}"
         exit
       end
