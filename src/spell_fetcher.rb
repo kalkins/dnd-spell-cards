@@ -17,7 +17,7 @@ class SpellFetcher
 
         Spell.new(
           name: data["name"],
-          description: data["desc"],
+          description: data["desc"].join("\n"),
         )
       else
         error = response,body
