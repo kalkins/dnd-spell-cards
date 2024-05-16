@@ -10,11 +10,11 @@ def render_cards spells, out_dir, out_file, color
     spells.each_with_index { |spell, i|
       text range: i,
            layout: :Name,
-           str: spell.name
+           str: spell["name"]
 
       text range: i,
            layout: :Description,
-           str: spell.description
+           str: spell["desc"].join("\n")
     }
 
     save_pdf file: out_file, dir: out_dir, sprue: "sprue/a4x9.yaml"
